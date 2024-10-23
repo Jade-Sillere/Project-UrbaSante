@@ -73,7 +73,7 @@ install.packages("RColorBrewer")
 install.packages("rmapshaper")
 install.packages("shinythemes")
 
-En outre, veuillez vous assurer que les fichiers de forme IRIS, communaux, départementaux et régionaux produits par l'INSEE se trouvent dans votre répertoire de travail. Ceux-ci se trouvent dans le dossier INSEE tables (Note : pour plus d'informations sur la structure, veuillez consulter la section sur la structure des fichiers ci-dessous).
+En outre, veuillez vous assurer que les fichiers de forme IRIS, communaux, départementaux et régionaux produits par l'INSEE se trouvent dans votre répertoire de travail. Ceux-ci se trouvent dans le dossier shapefiles (Note : pour plus d'informations sur la structure, veuillez consulter la section sur la structure des fichiers ci-dessous).
 
 ### **Utilisation**
 
@@ -109,26 +109,24 @@ Pour certains territoires et indicateurs, il peut y avoir des anomalies dans les
 
 ### **Structure des fichiers**
 
-├── README.md <- The top-level README for developers using this project.
-├── LICENSE <- Licence for the repository (by default, MIT)
-├── requirements.txt <- The requirements file for reproducing the analysis environment
+├── README.md <- Le fichier README principal pour les développeurs utilisant ce projet.
+├── LICENSE <- Licence MIT pour le dépôt
+├── requirements.txt <- Le fichier des exigences pour reproduire l'environnement d'analyse
 ├── data
-│   ├── raw <- Original data
-│   ├── intermediate  <- Intermediate data that has been transformed
-│   └── processed  <- The final data set if transformed
+│   ├── raw <- Données originales
+│   ├── intermediate  <- Données intermédiaires qui ont été transformées (c-à-d., nettoyées et traitées)
+│   └── processed  <- Ensemble de données final si transformé (c-à-d., prêt à être utilisé dans l'application)
 │
-├── docs <- Documentation of the code
-│   └── examples <- Example of how to use it (notebooks) 
+├── docs <- Documentation du code
+│   └── examples <- Exemple d'utilisation (notebooks)
 │
-├── src <- Source code for use in this project.
-│   ├── exploratory <- Exploratory scripts
-│   ├── features <- Scripts to turn raw data into features for modeling
-│   ├── models <- Scripts to train models and then use trained models to make
-│   └── analysis <- Scripts to produce results
+├── src <- Code source à utiliser dans ce projet.
+│   ├── Déterminants <- Scripts pour transformer les données brutes en indicateurs répartis entre groupements                              d'indicateurs similaires (par ex., Déterminant 1 - Qualité de l'air)
+│   └── Formattage <- Scripts pour transformer les données d'indicateurs en fichier d'entrée simplifié
 │
-├── reports <- Generated analysis as HTML, PDF, LaTeX, etc.
+├── reports <- Analyse générée sous forme de HTML, PDF, LaTeX, etc.
 │
-└── app <- If relevant, scripts to run an app
+└── app <- Scripts pour exécuter l'application de visualisation Rshiny
 
 ## Contenu du Drive
 
