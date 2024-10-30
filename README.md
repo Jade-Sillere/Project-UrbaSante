@@ -121,7 +121,8 @@ Pour certains territoires et indicateurs, il peut y avoir des anomalies dans les
 │   └── examples <- Exemple d'utilisation (notebooks)
 │
 ├── src <- Code source à utiliser dans ce projet.
-│   ├── Déterminants <- Scripts pour transformer les données brutes en indicateurs répartis entre groupements                              d'indicateurs similaires (par ex., Déterminant 1 - Qualité de l'air)
+│   ├── Déterminants <- Scripts pour transformer les données brutes en indicateurs répartis entre groupements     
+│                       d'indicateurs similaires (par ex., Déterminant 1 - Qualité de l'air)
 │   └── Formattage <- Scripts pour transformer les données d'indicateurs en fichier d'entrée simplifié
 │
 ├── reports <- Analyse générée sous forme de HTML, PDF, LaTeX, etc.
