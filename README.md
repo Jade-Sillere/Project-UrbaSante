@@ -113,85 +113,21 @@ Pour certains territoires et indicateurs, il peut y avoir des anomalies dans les
 ├── LICENSE <- Licence MIT pour le dépôt
 ├── requirements.txt <- Le fichier des exigences pour reproduire l'environnement d'analyse
 ├── data
-│   ├── raw <- Données originales
-│   ├── intermediate  <- Données intermédiaires qui ont été transformées (c-à-d., nettoyées et traitées)
-│   └── processed  <- Ensemble de données final si transformé (c-à-d., prêt à être utilisé dans l'application)
+│   ├── raw <- Données originales (celles-ci sont présentes dans différents formats ex.,géospatial, JSON, CSV etc.)
+│   ├── intermediate  <- Données intermédiaires qui ont été transformées
+│   └── processed  <- Ensemble de données final prêtes pour utilisation au sein de l'application
 │
 ├── docs <- Documentation du code
 │   └── examples <- Exemple d'utilisation (notebooks)
 │
 ├── src <- Code source à utiliser dans ce projet.
 │   ├── Déterminants <- Scripts pour transformer les données brutes en indicateurs répartis entre groupements     
-│                       d'indicateurs similaires (par ex., Déterminant 1 - Qualité de l'air)
+│   |                    d'indicateurs similaires (par ex., Déterminant 1 - Qualité de l'air)
 │   └── Formattage <- Scripts pour transformer les données d'indicateurs en fichier d'entrée simplifié
 │
 ├── reports <- Analyse générée sous forme de HTML, PDF, LaTeX, etc.
 │
 └── app <- Scripts pour exécuter l'application de visualisation Rshiny
-
-## Contenu du Drive
-
-Le Drive est divisé en 4 grands dossiers.
-
-### "Fichiers Additionnels"
-
-Ce dossier contient les fichiers qui capturent notre progression sur le projet (présentation de diapositives / suivi Excel).
-
-### "Tables INSEE"
-
-Ce dossier contient tous les fichiers shapefile de l'INSEE ou "table de passage" qui nous permettront de lier nos coordonnées brutes à des iris spécifiques, des communes, des départements et des régions en France.
-
-#### 1- Iris INSEE
-
-Les communes avec au moins 10 000 habitants et la plupart des communes avec entre 5 000 et 10 000 habitants sont divisées en unités IRIS. Ce fichier contient le shapefile Iris "CONTOURS-IRIS.shp" qui est le seul importé. Les autres ne contiennent que d'autres informations directement reconnues par le logiciel de programmation.
-
-#### 2- Communes INSEE
-
-Celui-ci contient le shapefile pour les communes en France "communes-20220101.shp" avec les autres fichiers (avec différentes extensions) contenant des informations automatiquement lues par le logiciel comme précédemment.
-
-#### 3- Départements INSEE
-
-Identique aux précédents mais pour les départements en France. Notez que ce shapefile séparait la ville de Lyon et le département "Rhône" (?) donc nous avons dû manipuler ce shapefile afin de fusionner ceux-ci pour inclure Lyon dans "Rhône". Le shapefile final utilisé dans notre flux de travail d'indicateurs est "New Version/departement_shapefile.rds" dans ce fichier.
-
-#### 4- Régions INSEE
-
-Contient le shapefile pour les régions en France avec les autres fichiers (avec différentes extensions) contenant des informations automatiquement lues par le logiciel comme précédemment.
-
-#### Flux de Manipulation INSEE
-
-Contient le script R utilisé pour modifier le shapefile précédent du département.
-
-#### France_shapefile
-
-Ce fichier contient les shapefiles pour la France (à différentes résolutions) qui ont été utilisés lorsque nous avons dû découper la France à partir d'un fichier satellite mondial.
-
-#### Tables de Passage
-
-Ce dossier contient des fichiers Excel de l'INSEE qui nous ont permis de lier nos indicateurs à différentes échelles (des communes aux départements...) en utilisant des codes INSEE universels.
-
-### "Indicateurs"
-
-Le dossier contenant les informations pour chacun de nos indicateurs. Vous trouverez d'abord un fichier pour chacun des déterminants. Ensuite, pour chaque déterminant, un fichier pour chaque indicateur. Chaque fichier d'indicateur comprend les éléments suivants :
-
-#### Code / Flux de travail
-
-Ce fichier contient les scripts utilisés pour créer les indicateurs, avec des annotations expliquant le processus inclus dans ces fichiers. Comme indiqué précédemment, ils peuvent être présents dans différentes extensions lorsque différents langages de programmation sont utilisés.
-
-#### Données
-
-Contient les données recueillies pour la construction de l'indicateur. Comme mentionné précédemment, celles-ci peuvent être présentes dans différents formats spécifiques à un indicateur (géospatial, JSON, Excel...)
-
-#### Indicateur
-
-Contient l'indicateur (au format Excel) ou un objet spécifique (RDS) pour les données satellites.
-
-### "RShiny"
-
-Ce dossier contient tout le code relatif à l'outil de visualisation programmé en R, en utilisant le paquet RShiny.
-
-#### Graphique
-
-Contient le code pour et les images de graphiques individuels des indicateurs.
 
 ### **Contributions**
 
