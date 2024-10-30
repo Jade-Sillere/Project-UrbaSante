@@ -57,7 +57,7 @@ Pour être visualisés à l'aide de l'outil de visualisation, à différentes r�
 
 Lors de l'exécution de l'outil de visualisation, veuillez vous assurer que vous avez téléchargé le fichier des indicateurs dans votre répertoire et que le chemin d'accès au fichier dans le code est modifié en fonction du chemin d'accès contenant ce fichier.
 
-L'outil de visualisation a été conçu en R, il utilise le package Rshiny. Par conséquent, avant d'exécuter et d'éditer le code, assurez-vous que les paquets suivants sont installés :
+L'outil de visualisation a été conçu en R, il utilise le package Rshiny. Par conséquent, avant d'exécuter et d'éditer le code, assurez-vous que les paquets suivants sont installés (Veuillez-exécuter le fichier installation_de_paquets) :
 
 install.packages("raster")
 install.packages("sp")
