@@ -113,16 +113,19 @@ Pour certains territoires et indicateurs, il peut y avoir des anomalies dans les
 ├── LICENSE <- Licence MIT pour le dépôt
 ├── requirements.txt <- Le fichier des exigences pour reproduire l'environnement d'analyse
 ├── data
-│   ├── raw <- Données originales (celles-ci sont présentes dans différents formats ex.,géospatial, JSON, CSV etc.)
+│   ├── raw <- Données originales (celles-ci sont présentes dans différents formats           
+|   |                             ex.,géospatial, JSON, CSV etc.)
 │   ├── intermediate  <- Données intermédiaires qui ont été transformées
-│   └── processed  <- Ensemble de données final prêtes pour utilisation au sein de l'application
+|   ├── processed  <- Ensemble de données final prêtes pour utilisation au sein
+|   |                 l'application
+│   └── shapefiles <- Contient les liens de téléchargement pour les shapefiles nécessaires
 │
 ├── docs <- Documentation du code
 │   └── examples <- Exemple d'utilisation (notebooks)
 │
 ├── src <- Code source à utiliser dans ce projet.
-│   ├── Déterminants <- Scripts pour transformer les données brutes en indicateurs répartis entre groupements     
-│   |                    d'indicateurs similaires (par ex., Déterminant 1 - Qualité de l'air)
+│   ├── Déterminants <- Scripts pour transformer les données brutes en indicateurs répartis    
+|   |                   entre groupements d'indicateurs similaires (par ex., Déterminant 1 - Qualité de l'air)
 │   └── Formattage <- Scripts pour transformer les données d'indicateurs en fichier d'entrée simplifié
 │
 ├── reports <- Analyse générée sous forme de HTML, PDF, LaTeX, etc.
@@ -141,7 +144,7 @@ Sofia Vaca - sofia.vaca@polytechnique.edu
 
 ### **Remerciements**
 
-Nous tenons à remercier l'équipe d'ECOLAB pour avoir proposé ce défi et pour toute l'aide apportée au cours du développement de cet outil. Nous remercions en particulier Paul Grignon et Theo Sigiscar pour le temps qu'ils nous ont consacré et les conseils qu'ils nous ont prodigués tout au long de ce projet. Par ailleurs, ce projet a été réalisé dans le cadre du MSc&T in Data and Economics for Public Policy et nous tenons à remercier nos directeurs de master Pierre Boyer et Franck Malherbet pour avoir organisé ce challenge avec ECOLAB et pour leur soutien constant.
+Nous tenons à remercier l'équipe d'ECOLAB pour avoir proposé ce défi et pour toute l'aide apportée au cours du développement de cet outil. Nous remercions en particulier Paul Grignon et Theo Sigiscar pour le temps qu'ils nous ont consacré et les conseils qu'ils nous ont prodigués tout au long de ce projet. Par ailleurs, ce projet a été réalisé dans le cadre du MSc&T in Data and Economics for Public Policy et nous tenons à remercier nos directeurs de master, Pierre Boyer et Franck Malherbet, pour avoir organisé ce challenge avec ECOLAB et pour leur soutien constant.
 
 ### **Liens de l'outil du GD4H**
 
