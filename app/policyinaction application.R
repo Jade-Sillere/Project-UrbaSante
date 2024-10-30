@@ -1,7 +1,7 @@
 #----------------------------------- INFO -------------------------------------#
 # Author : Alfonso AWADALLA 
-# Date	: March 2024
-# Descr	: Some Data Processing + Shiny App
+# Date	 : March 2024
+# Descr	 : Minor necessary pre-data processing & application
 #------------------------------------------------------------------------------#
 
 
