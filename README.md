@@ -131,6 +131,30 @@ Pour certains territoires et indicateurs, il peut y avoir des anomalies dans les
 ├── reports <- Analyse générée sous forme de HTML, PDF, LaTeX, etc.
 │
 └── app <- Scripts pour exécuter l'application de visualisation Rshiny
+```
+├── README.md                <- Le fichier README principal pour les développeurs utilisant ce projet.
+├── LICENSE                  <- Licence MIT pour le dépôt.
+├── requirements.txt         <- Le fichier des exigences pour reproduire l'environnement d'analyse.
+├── data
+│   ├── raw                  <- Données originales (celles-ci sont présentes dans différents formats 
+│   │                           ex., géospatial, JSON, CSV, etc.)
+│   ├── intermediate         <- Données intermédiaires qui ont été transformées.
+│   ├── processed            <- Ensemble de données final prêtes pour utilisation au sein 
+│   │                           de l'application.
+│   └── shapefiles           <- Contient les liens de téléchargement pour les shapefiles nécessaires.
+│
+├── docs                     <- Documentation du code.
+│   └── examples             <- Exemple d'utilisation (notebooks).
+│
+├── src                      <- Code source à utiliser dans ce projet.
+│   ├── Déterminants         <- Scripts pour transformer les données brutes en indicateurs répartis 
+│   │                           entre groupements d'indicateurs similaires (par ex., Déterminant 1 - Qualité de l'air).
+│   └── Formattage           <- Scripts pour transformer les données d'indicateurs en fichier d'entrée simplifié.
+│
+├── reports                  <- Analyse générée sous forme de HTML, PDF, LaTeX, etc.
+│
+└── app                      <- Scripts pour exécuter l'application de visualisation Rshiny.
+```
 
 
 ### **Contributions**
