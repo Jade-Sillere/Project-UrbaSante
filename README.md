@@ -108,6 +108,7 @@ Par example, les iris n’ayant pas de données sont ceux où la population pré
 Pour certains territoires et indicateurs, il peut y avoir des anomalies dans les données et c'est pourquoi il est nécessaire d’avoir une connaissance ou expertise locale permettant de remarquer l’apparition de certaines anomalies. 
 
 ### **Structure des fichiers**
+├── README.md <- Main README file for developers using this project. ├── LICENSE <- MIT License for the repository. ├── requirements.txt <- Requirements file for reproducing the analysis environment. ├── data │ ├── raw <- Original data in various formats (e.g., geospatial, JSON, CSV, etc.) │ ├── intermediate <- Intermediate data that has been transformed. │ ├── processed <- Final dataset ready for use within the application. │ └── shapefiles <- Contains download links for necessary shapefiles. │ ├── docs <- Code documentation. │ └── examples <- Usage examples (notebooks). │ ├── src <- Source code for use in this project. │ ├── Déterminants <- Scripts to transform raw data into indicators grouped by │ │ similar categories (e.g., Déterminant 1 - Air Quality). │ └── Formattage <- Scripts to transform indicator data into simplified input files. │ ├── reports <- Generated analyses in formats such as HTML, PDF, LaTeX, etc. │ └── app <- Scripts for running the Rshiny visualization application.
 
 ├── README.md                <- Main README file for developers using this project.
 ├── LICENSE                  <- MIT License for the repository.
